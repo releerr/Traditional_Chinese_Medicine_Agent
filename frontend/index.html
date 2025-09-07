@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>私人中医AI</title>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-green-50 to-green-200 font-inter">
+
+    <div class="flex justify-center items-start min-h-screen p-6">
+        <div class="chat-container w-full max-w-5xl h-[90vh] flex flex-col shadow-2xl rounded-3xl bg-white overflow-hidden">
+
+       
+            <div class="chat-header text-center font-bold text-3xl py-4 tracking-wide bg-gradient-to-r from-green-500 to-teal-500 text-white shadow-md">
+                私人中医AI
+            </div>
+
+       
+            <div id="chat-box" class="chat-box flex-1 overflow-y-auto p-6 bg-green-50"></div>
+
+       
+            <div class="chat-input-container flex items-center gap-3 p-4 border-t border-gray-200 bg-green-100">
+                
+             
+                <textarea id="user-input" placeholder="请输入症状或问题..."
+                    class="flex-1 p-4 rounded-2xl border border-gray-300
+                           bg-gradient-to-r from-green-100 to-green-200
+                           focus:outline-none focus:ring-2 focus:ring-green-400 text-lg
+                           h-16 resize-none">
+                </textarea>
+
+               
+                <input type="file" id="tongue-image" accept="image/*"
+                    class="block text-sm text-gray-500 file:mr-4 file:py-3 file:px-5
+                           file:rounded-full file:border-0
+                           file:text-sm file:font-semibold
+                           file:bg-green-400 file:text-white
+                           hover:file:bg-green-500 cursor-pointer">
+
+             
+                <button id="send-btn"
+                        class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-2xl font-semibold transition-colors text-lg shadow-md">
+                    发送
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script type="module" src="utils.js"></script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

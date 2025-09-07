@@ -1,0 +1,26 @@
+# 后端
+fastapi
+uvicorn
+openai
+sentence-transformers
+transformers
+langchain
+
+# 异步 HTTP 请求，用于调用 LLM 或其他 API
+httpx==0.24.1
+
+# 工具
+requests
+
+pydantic
+typing-extensions==4.7.1
+
+# 开发/调试
+jupyter
+
+# 数据库
+sqlalchemy==2.0.22
+aiosqlite==0.18.0
+
+# 日志
+loguru==0.7.2
